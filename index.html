@@ -3,7 +3,6 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<script src="script.js"></script>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 </head>
 <body>
@@ -20,7 +19,7 @@
 					<div id="first-name">
 						<label for="first_name">First Name:</label>
 						<br>
-						<input type="text" id="first_name" name="first_name" placeholder="Name..." required pattern="^[a-zA-Z]+$">
+						<input type="text" id="first_name" name="first_name" placeholder="Name..."  pattern="^[a-zA-Z]+$" required>
 					</div>
 
 					<div id="email">
@@ -32,7 +31,7 @@
 					<div id="password">
 						<label for="password">Password:</label>
 						<br>
-						<input type="password" id="password" name="password" placeholder="Password...">
+						<input type="password" id="password" name="password" placeholder="Password..." required>
 					</div>
 
 					<button class="submit-button" type="submit">Submit</button>
@@ -46,13 +45,13 @@
 					<div id="tel">
 						<label for="tel">Phone Number:</label>
 						<br>
-						<input type="tel" id="tel" name="tel" placeholder="123 456 789" required pattern="[0-9]{3}\s[0-9]{3}\s[0-9]{3}">
+						<input type="tel" id="tel" name="tel" placeholder="123 456 789" pattern="[0-9]{3}\s[0-9]{3}\s[0-9]{3}" required>
 					</div>
 
 					<div id="confirm-password">
 						<label for="confirm-password">Confirm Password:</label>
 						<br>
-						<input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password...">
+						<input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password..." required>
 					</div>
 
 				</form>
@@ -61,5 +60,6 @@
 			
 		</div>
 	</div>
+	<script src="script.js"></script>
 </body>
 </html>
