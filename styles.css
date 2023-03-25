@@ -9,13 +9,15 @@ body{
     align-items: center;
     font-family: 'Lora', serif;
     font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #090c10;
+    color: #3a6378;
 }
 
 .content{
     width: 90vw;
     height: 90vh;
     border-radius: 25px;
-    border: 1px solid #D3D3D3;
+    border: 1px solid #313741;
     display: flex;
     overflow: hidden;
 }
@@ -39,5 +41,60 @@ body{
 .form{
     height: 100%;
     width: 100%;
-    background-color: grey;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    flex-flow:column wrap;
+    flex-wrap: wrap;
+    column-gap: 5%;
+}
+
+.sign-up{
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    font-size: 2rem;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+
+.form > div{
+    height: 25%;
+    width: 50%;
+}
+
+input{
+    width: 100%;
+    height: 30%;
+    font-size: 1rem;
+    background-color: #5a5457;
+    border-radius: 5px;
+    border-style: none;
+}
+
+input:focus{
+    height: 35%;
+}
+
+.submit-button{
+    height: 15%;
+    width: 40%;
+    font-size: 1.2rem;
+    background-color: #6f2323;
+    border-radius: 5px;
+    border-style: none;
+}
+
+p{
+    font-size: 1rem;
+}
+
+input:valid{
+    border-color: #03c04a;
+    border-style: solid;
+}
+
+input:invalid{
+    border-color: #a02a2a;
+    border-style: solid;
 }
