@@ -24,6 +24,7 @@ body{
 
 .image-div{
     background-image: url(planet.png);
+    background-size: cover;
     height: 100%;
     width: 40%;
     background-position: center;
@@ -41,9 +42,9 @@ body{
 .form{
     height: 100%;
     width: 100%;
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     flex-flow:column wrap;
     flex-wrap: wrap;
     column-gap: 5%;
@@ -59,13 +60,13 @@ body{
 
 
 .form > div{
-    height: 25%;
-    width: 50%;
+    height: 50%;
+    width: 100%;
 }
 
 input{
     width: 100%;
-    height: 30%;
+    height: 100%;
     font-size: 1rem;
     background-color: #5a5457;
     border-radius: 5px;
@@ -77,14 +78,14 @@ input:focus{
 }
 
 .submit-button{
-    height: 15%;
-    width: 40%;
+    height: 60%;
+    width: 60%;
     font-size: 1.2rem;
     background-color: #6f2323;
     border-radius: 5px;
     border-style: none;
+    margin-top: 30px;
 }
-
 p{
     font-size: 1rem;
 }
@@ -114,4 +115,68 @@ input:invalid{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media(max-width:1200px){
+    .content{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .image-div{
+        width: 100%;
+        height: 30%;
+    }
+
+    .form-div{
+        width: 90%;
+        margin: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .logo-div{
+        margin-top: 10%;
+        height: 30%;
+    }
+}
+
+@media(max-width:600px){
+    .form{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7,1fr);
+    } 
+
+    .form > div{
+        height: unset;
+        width: 100%;
+    }
+
+    input{
+        margin-bottom: 40px;
+        height: 60%;
+    }
+
+    .image-div{
+        height: 30vh;
+    }
+}
+
+@media(max-height: 800px){
+   .title{
+    margin-top: -10px;
+    margin-bottom: -10px;
+   }
+
+   body{
+    height:unset
+   }
+}
+
+@media(max-width: 315px){
+    .logo-div > h1{
+        font-size: 1.8rem;
+    }
 }

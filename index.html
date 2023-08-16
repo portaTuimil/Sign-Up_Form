@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Sign-Up Form</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta charset="UTF-8">
+	<meta name="description" content="The Sign-Up Form Project from The Odin Project">
+	<meta name="author" content="Pablo Porta">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" href="HandIcon.png">
+
+
 </head>
 <body>
 	<div class="content">
@@ -15,7 +23,7 @@
 
 		<div class="form-div">
 
-			<h1>This is a Sign-Up Form!!</h1>
+			<h1 class="title">This is a Sign-Up Form!!</h1>
 			<br>
 			<div class="sign-up">Sign-Up:</div>
 
@@ -25,11 +33,21 @@
 						<br>
 						<input type="text" id="first_name" name="first_name" placeholder="Name..."  pattern="^[a-zA-Z]+$" required>
 					</div>
+					<div id="last-name">
+						<label for="last_name">Last Name:</label>
+						<br>
+						<input type="text" id="last_name" name="last_name" placeholder="Last Name..." required>
+					</div>
 
 					<div id="email">
 						<label for="email">Email:</label>
 						<br>
 						<input type="email" id="email" name="email" placeholder="Email..." required>
+					</div>
+					<div id="tel">
+						<label for="tel">Phone Number:</label>
+						<br>
+						<input type="tel" id="tel" name="tel" placeholder="123 456 789" pattern="[0-9]{3}\s[0-9]{3}\s[0-9]{3}" required>
 					</div>
 
 					<div id="password">
@@ -37,27 +55,13 @@
 						<br>
 						<input type="password" id="password" name="password" placeholder="Password..." required>
 					</div>
-
-					<button class="submit-button" type="submit">Submit</button>
-
-					<div id="last-name">
-						<label for="last_name">Last Name:</label>
-						<br>
-						<input type="text" id="last_name" name="last_name" placeholder="Last Name..." required>
-					</div>
-
-					<div id="tel">
-						<label for="tel">Phone Number:</label>
-						<br>
-						<input type="tel" id="tel" name="tel" placeholder="123 456 789" pattern="[0-9]{3}\s[0-9]{3}\s[0-9]{3}" required>
-					</div>
-
 					<div id="confirm-password">
 						<label for="confirm-password">Confirm Password:</label>
 						<br>
 						<input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password..." required>
 					</div>
 
+					<button class="submit-button" type="submit">Submit</button>
 				</form>
 				
 				<p class="log-in">Already have an account? <a href="">Log In</a></p>
