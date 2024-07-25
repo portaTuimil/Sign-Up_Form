@@ -20,6 +20,8 @@ body{
     border: 1px solid #313741;
     display: flex;
     overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .image-div{
@@ -74,7 +76,7 @@ input{
 }
 
 input:focus{
-    height: 35%;
+    height: 90%;
 }
 
 .submit-button{
